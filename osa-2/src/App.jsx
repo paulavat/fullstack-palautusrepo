@@ -61,6 +61,8 @@ const Part = ({ part }) => {
   );
 };
 
+// part 2.3 vastattu, koska käytin 2.2. lukumäärän laskemiseen jo reduce methodia
+
 const TotalExercises = ({ parts }) => {
   const Total = parts.reduce((sum, part) => sum + part.exercises, 0);
   return (
